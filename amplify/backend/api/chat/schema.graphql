@@ -1,0 +1,7 @@
+type Message @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  text: String!
+  sender: ID!
+  senderName: String
+  createdAt: AWSDateTime!
+}
